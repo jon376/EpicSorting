@@ -1,7 +1,7 @@
 import random, copy
 
 def bogoSort(items):
-    # Kopier den liste, vi har modtaget som parameter, så vi ikke ændrer den originale!
+    # Kopier den liste, vi har modtaget som parameter, så vi ikke ændrer den originale!!
     items = items.copy()
     isSorted = None # Boolean til markering af, om listen er sorteret
     attempts = 0 # Tællevariabel til at holde styr på antal af forsøg

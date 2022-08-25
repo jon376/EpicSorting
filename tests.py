@@ -112,6 +112,8 @@ if __name__ == '__main__':
 
 # Optimized Bubble sort in Python
 
+
+
 def bubbleSort(array):
     # loop through each element of array
     for i in range(len(array)):

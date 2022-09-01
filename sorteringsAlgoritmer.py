@@ -55,7 +55,7 @@ data = [-2, 45, 0, 11, -9]
 
 bubbleSort(data)
 
-print('Sorted Array in Ascending Order:')
+print('SORTERET.:')
 print(data)
 
 if __name__ == '__main__':

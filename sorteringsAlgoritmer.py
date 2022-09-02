@@ -23,7 +23,7 @@ def bogoSort(items):
 
 
 # Optimized Bubble sort in Python
-
+""""""
 def bubbleSort(array):
     # loop through each element of array
     for i in range(len(array)):
@@ -50,6 +50,8 @@ def bubbleSort(array):
         if not swapped:
             break
 
+
+
 #Insertion sort
 
 def insertionSort(items):
@@ -58,11 +60,11 @@ def insertionSort(items):
         while J>0 and items [J] < items [J-1]:
             items[J],items[J+1] = items[J+1], items[J]
             J-=1
-     return items
+    return items
 
 
 if __name__ == '__main__':
-    l = list(range(0, 5))
+    l = list(range(0, 500))
     lb = l.copy()
     for i in range(1):
         random.shuffle(lb)

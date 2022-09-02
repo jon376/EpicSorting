@@ -50,21 +50,24 @@ def bubbleSort(array):
         if not swapped:
             break
 
+#Insertion sort
 
-data = [-2, 45, 0, 11, -9]
+def insertionSort(items):
+    for i in range(1,len(items)-1):
+        J = i
+        while J>0 and items [J] < items [J-1]:
+            items[J],items[J+1] = items[J+1], items[J]
+            J-=1
+     return items
 
-bubbleSort(data)
-
-print('SORTERET.:')
-print(data)
 
 if __name__ == '__main__':
     l = list(range(0, 5))
     lb = l.copy()
-    for i in range(50):
+    for i in range(1):
         random.shuffle(lb)
         ## Kald den funktion, du vil teste
-        ls = bubbleSort(l)
+        ls = insertionSort(l)
         ## Kald den funktion, du vil teste
         if ls != l:
             print('Fejl! Algoritmen kan ikke sortere.')
@@ -72,5 +75,6 @@ if __name__ == '__main__':
     print('Succes! Algoritmen sorterer korrekt.')
     print('blandet: ', lb)
     print('sorteret:', ls)
+
 
 

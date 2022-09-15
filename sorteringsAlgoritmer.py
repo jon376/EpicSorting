@@ -55,16 +55,22 @@ def bubbleSort(array):
 #Insertion sort
 
 def insertionSort(items):
+# Insetion algoritmen bliver defineret med værdien “items”.
     for i in range(1,len(items)-1):
+# for i in range laver et loop, hvor den starter på “1” pladsen og items værdien sætter den en tilbage
         J = i
+# J bliver tildelt loopet “i”
         while J>0 and items [J] < items [J-1]:
             items[J],items[J+1] = items[J+1], items[J]
             J-=1
+
     return items
+# når J er større end 0 + items (altså J), og items(J) får værdien -1. Så bliver der tjekket om J er mindre end det næste tal i rækken og det bliver returned indtil hele rækken der tjekkes er ovre.
+
 
 
 if __name__ == '__main__':
-    l = list(range(0, 500))
+    l = list(range(0, 50))
     lb = l.copy()
     for i in range(1):
         random.shuffle(lb)
